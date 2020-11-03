@@ -37,6 +37,7 @@ nav>div {
     background-color: hsl(322, 100%, 66%);
     border: 2px solid hsl(322, 100%, 66%);
     border-radius: 10rem;
+    cursor: pointer;
 }
 
 .btn.getStarted {
@@ -225,4 +226,9 @@ footer button.btn {
     width: calc(30% - 10px);
     border: none;
     padding: 0;
+}
+
+footer button.btn:hover {
+    color: hsl(322, 100%, 66%);
+    background-color: hsl(207, 100%, 98%);
 }
