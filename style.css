@@ -1,0 +1,228 @@
+/* font-family: 'Poppins', sans-serif; */
+/* color: hsl(192, 100%, 9%) ciemny*/
+/* color: hsl(207, 100%, 98%) biały*/
+
+body {
+    display: grid;
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    color: hsl(192, 100%, 9%);
+    /* background-color: hsl(207, 100%, 98%); */
+}
+
+nav {
+    display: grid;
+    grid-template-columns: auto auto;
+    position: sticky;
+    top: 0;
+    height: 10vh;
+    background-color: white;
+}
+
+#logo {
+    position: relative;
+    top: 20px;
+    left: 30px;
+}
+
+nav>div {
+    justify-self: end;
+}
+
+.btn {
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    color: hsl(207, 100%, 98%);
+    background-color: hsl(322, 100%, 66%);
+    border: 2px solid hsl(322, 100%, 66%);
+    border-radius: 10rem;
+}
+
+.btn.getStarted {
+    margin-top: 20px;
+    font-weight: 600;
+    padding: 10px 40px 10px 40px;
+}
+
+.btn.getStarted:hover {
+    color: hsl(322, 100%, 66%);
+    background-color: hsl(207, 100%, 98%);
+}
+
+.btn.tryIt {
+    position: relative;
+    top: 20px;
+    right: 20px;
+    font-size: 1.1rem;
+    background-color: transparent;
+    color: hsl(322, 100%, 66%);
+    text-transform: capitalize;
+    padding: 5px 20px 5px 20px;
+}
+
+.btn.tryIt:hover {
+    background-color: hsl(322, 100%, 66%);
+    color: hsl(207, 100%, 98%);
+}
+
+section {
+    text-align: center;
+}
+
+section.first p {
+    margin: auto;
+    width: 50%;
+}
+
+section.second {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+
+.mockups {
+    grid-column: 1 / 3;
+}
+
+.communities p,
+.messages p {
+    margin: 0;
+    font-size: 74px;
+}
+
+.communities img,
+.messages img {
+    position: relative;
+    top: 20px;
+    left: -70px;
+}
+
+section.third,
+section.fourth,
+section.fifth {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 800px;
+}
+
+section.third {
+    background-image: url(/images/bg-section-top-desktop-1.svg), url(/images/bg-section-bottom-desktop-1.svg);
+    background-repeat: no-repeat;
+    background-position: top, bottom;
+}
+
+section.fifth {
+    background-image: url(/images/bg-section-top-desktop-2.svg), url(/images/bg-section-bottom-desktop-2.svg);
+    background-repeat: no-repeat;
+    background-position: top, bottom;
+}
+
+section.sixth {
+    height: 800px;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.third>div,
+.fourth>div,
+.fifth>div {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    align-self: center;
+    align-items: center;
+    height: 530px;
+    background-color: #f6fbff;
+}
+
+.fourth>div {
+    background-color: white;
+}
+
+.third>div h2,
+.fourth>div h2,
+.fifth>div h2 {
+    justify-self: start;
+    align-self: end;
+    margin-left: 100px;
+}
+
+.sixth h2 {
+    align-self: end;
+}
+
+.third>div p,
+.fourth>div p,
+.fifth>div p {
+    justify-self: start;
+    align-self: start;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: start;
+}
+
+div.images>img {
+    height: 400px;
+}
+
+.fourth img {
+    justify-self: end;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-image: url(/images/bg-footer-top-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 540px;
+    align-items: self-end;
+}
+
+footer div {
+    height: 342px;
+    color: white;
+    background-color: #00252e;
+    padding: 20px 100px;
+}
+
+footer img {
+    margin-bottom: 24px;
+}
+
+footer p {
+    margin: 10px;
+}
+
+footer i {
+    padding-right: 20px;
+}
+
+.news {
+    position: relative;
+    top: 20px;
+    height: 39px;
+    font-size: 24px;
+    font-weight: 700;
+    text-justify: distribute;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+footer input {
+    margin-left: 10px;
+    border: none;
+    padding: 0;
+    border-radius: 0.6rem;
+    height: 40px;
+    width: calc(70% - 10px);
+}
+
+footer button.btn {
+    border-radius: 0.6rem;
+    height: 40px;
+    width: calc(30% - 10px);
+    border: none;
+    padding: 0;
+}
