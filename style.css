@@ -21,7 +21,7 @@ nav {
     z-index: 1;
 }
 
-#logo {
+.logo {
     position: relative;
     top: 20px;
     left: 30px;
@@ -257,7 +257,7 @@ footer div i.fab:hover {
         max-width: 375px;
     }
 
-    #logo {
+    .logo {
         position: relative;
         scale: 0.6;
         top: 10px;
