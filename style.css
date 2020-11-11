@@ -18,6 +18,7 @@ nav {
     top: 0;
     height: 10vh;
     background-color: white;
+    z-index: 1;
 }
 
 #logo {
@@ -228,7 +229,175 @@ footer button.btn {
     padding: 0;
 }
 
+span {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
 footer button.btn:hover {
     color: hsl(322, 100%, 66%);
     background-color: hsl(207, 100%, 98%);
+}
+
+
+
+footer div i.fab {
+    text-align: center;
+    font-size: 50px;
+    margin: 20px 0 0 10px;
+}
+
+footer div i.fab:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 375px) {
+    body {
+        max-width: 375px;
+    }
+
+    #logo {
+        position: relative;
+        scale: 0.6;
+        top: 10px;
+        left: -40px;
+    }
+
+    .btn.getStarted {
+        margin-top: 20px;
+        font-weight: 600;
+        padding: 10px 40px 10px 40px;
+    }
+
+    .btn.tryIt {
+        top: 5px;
+        right: 10px;
+        padding: 5px 20px 5px 20px;
+    }
+
+    section.first {
+        padding-top: 30vw;
+        padding-bottom: 30vw;
+    }
+
+    section.first p {
+        margin: 10px 0;
+        width: auto;
+    }
+
+    section.second {
+        grid-template-columns: auto;
+        /* grid-template-rows: auto auto auto; */
+    }
+
+    .mockups {
+        grid-column: auto;
+    }
+
+    .mockups img {
+        max-width: 375px;
+    }
+
+
+    div.images>img {
+        width: 375px;
+        height: auto;
+
+    }
+
+    section.third,
+    section.fourth,
+    section.fifth {
+        grid-template-columns: auto;
+        height: auto;
+    }
+
+    section.third,
+    section.fourth,
+    section.fifth {
+        min-height: 90vh;
+    }
+
+    .third>div,
+    .fourth>div,
+    .fifth>div {
+        padding: 15px 0;
+        height: auto;
+
+    }
+
+    .third>div h2,
+    .fourth>div h2,
+    .fifth>div h2 {
+        margin: auto;
+    }
+
+    .third>div p,
+    .fourth>div p,
+    .fifth>div p {
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+
+    }
+
+    section.sixth,
+    footer {
+        height: 100vh;
+    }
+
+    section div.images {
+        margin-top: 112px;
+        margin-bottom: 0;
+    }
+
+    section.fifth div.images {
+        margin-top: 103px;
+        margin-bottom: 0;
+    }
+
+    section div {
+        margin-bottom: 51px;
+    }
+
+    section.fifth div {
+        margin-bottom: 101px;
+    }
+
+    div.images {
+        grid-row: 1 / 2;
+    }
+
+    section.third {
+        background-image: url(/images/bg-section-top-mobile-1.svg), url(/images/bg-section-bottom-mobile-1.svg);
+    }
+
+    section.fifth {
+        background-image: url(/images/bg-section-top-mobile-2.svg), url(/images/bg-section-bottom-mobile-2.svg);
+    }
+
+    footer {
+        grid-template-columns: auto;
+        background-image: url(/images/bg-footer-top-mobile.svg);
+    }
+
+    footer div {
+        padding: 5px 10px;
+    }
+
+    footer div:last-child {
+        grid-row: 1 / 2;
+        margin-top: 52px;
+        height: 50vh;
+    }
+
+    footer div:first-child {
+        height: 60vh;
+    }
+
+    footer div i.fab {
+        font-size: 25px;
+        margin: 0 0 0 10px;
+    }
 }
