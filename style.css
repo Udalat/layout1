@@ -1,14 +1,17 @@
 /* font-family: 'Poppins', sans-serif; */
 /* color: hsl(192, 100%, 9%) ciemny*/
 /* color: hsl(207, 100%, 98%) biały*/
+html {
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    color: hsl(192, 100%, 9%)
+}
 
 body {
     display: grid;
+    width: 100vw;
     max-width: 1440px;
     margin: 0 auto;
-    font-family: 'Poppins', sans-serif;
-    color: hsl(192, 100%, 9%);
-    /* background-color: hsl(207, 100%, 98%); */
 }
 
 nav {
@@ -22,18 +25,15 @@ nav {
 }
 
 .logo {
-    position: relative;
-    top: 20px;
-    left: 30px;
-}
-
-nav>div {
-    justify-self: end;
+    align-self: center;
+    justify-self: start;
+    padding-left: 1vw;
 }
 
 .btn {
     display: inline-block;
     font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
     color: hsl(207, 100%, 98%);
     background-color: hsl(322, 100%, 66%);
     border: 2px solid hsl(322, 100%, 66%);
@@ -53,14 +53,14 @@ nav>div {
 }
 
 .btn.tryIt {
-    position: relative;
-    top: 20px;
-    right: 20px;
-    font-size: 1.1rem;
+    justify-self: end;
+    align-self: center;
+    font-size: 1.4em;
     background-color: transparent;
     color: hsl(322, 100%, 66%);
     text-transform: capitalize;
     padding: 5px 20px 5px 20px;
+    margin-right: 1vw;
 }
 
 .btn.tryIt:hover {
@@ -70,6 +70,13 @@ nav>div {
 
 section {
     text-align: center;
+    font-size: 1.5em;
+    width: 100vw;
+    max-width: 1440px;
+}
+
+section.first {
+    min-height: 40vh;
 }
 
 section.first p {
@@ -81,23 +88,35 @@ section.second {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
+    background-image: url(/images/bg-section-top-desktop-1.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+    padding-bottom: 15%;
 }
 
 .mockups {
     grid-column: 1 / 3;
+    height: auto;
+}
+
+.mockups img {
+    width: 100%;
 }
 
 .communities p,
 .messages p {
+    width: 100%;
     margin: 0;
-    font-size: 74px;
+    font-size: 550%;
+    font-weight: 600;
 }
 
 .communities img,
 .messages img {
     position: relative;
-    top: 20px;
-    left: -70px;
+    top: 20%;
+    left: -15%;
 }
 
 section.third,
@@ -105,25 +124,25 @@ section.fourth,
 section.fifth {
     display: grid;
     grid-template-columns: 50% 50%;
-    height: 800px;
+    height: 60vh
 }
 
-section.third {
-    background-image: url(/images/bg-section-top-desktop-1.svg), url(/images/bg-section-bottom-desktop-1.svg);
+section.fourth {
+    background-image: url(/images/bg-section-top-desktop-2.svg), url(/images/bg-section-bottom-desktop-1.svg);
     background-repeat: no-repeat;
-    background-position: top, bottom;
-}
-
-section.fifth {
-    background-image: url(/images/bg-section-top-desktop-2.svg), url(/images/bg-section-bottom-desktop-2.svg);
-    background-repeat: no-repeat;
-    background-position: top, bottom;
+    background-position: bottom, top;
+    background-size: 100%;
+    height: 80vh;
 }
 
 section.sixth {
-    height: 800px;
+    height: 80vh;
     display: grid;
     grid-template-columns: auto;
+    background-image: url(/images/bg-footer-top-desktop.svg), url(/images/bg-section-bottom-desktop-2.svg);
+    background-repeat: no-repeat;
+    background-position: bottom, top;
+    background-size: 100%;
 }
 
 .third>div,
@@ -134,12 +153,12 @@ section.sixth {
     grid-template-rows: auto;
     align-self: center;
     align-items: center;
-    height: 530px;
+    height: 100%;
     background-color: #f6fbff;
 }
 
 .fourth>div {
-    background-color: white;
+    background-color: transparent;
 }
 
 .third>div h2,
@@ -147,7 +166,8 @@ section.sixth {
 .fifth>div h2 {
     justify-self: start;
     align-self: end;
-    margin-left: 100px;
+    width: 50%;
+    justify-self: center;
 }
 
 .sixth h2 {
@@ -159,13 +179,13 @@ section.sixth {
 .fifth>div p {
     justify-self: start;
     align-self: start;
-    margin-left: 100px;
-    margin-right: 100px;
-    text-align: start;
+    width: 50%;
+    margin: 0 auto;
+    text-align: justify;
 }
 
 div.images>img {
-    height: 400px;
+    width: 90%;
 }
 
 .fourth img {
@@ -175,64 +195,81 @@ div.images>img {
 footer {
     display: grid;
     grid-template-columns: 50% 50%;
-    background-image: url(/images/bg-footer-top-desktop.svg);
-    background-repeat: no-repeat;
-    background-position: top;
-    height: 540px;
+    height: 30vh;
     align-items: self-end;
+    font-size: 1.5em;
+    width: 100vw;
+    max-width: 1440px;
+}
+
+footer .logo {
+    margin-left: 4vw;
 }
 
 footer div {
-    height: 342px;
+    display: grid;
+    height: 100%;
+    width: 100%;
     color: white;
     background-color: #00252e;
-    padding: 20px 100px;
+    text-align: justify;
 }
 
-footer img {
-    margin-bottom: 24px;
-}
 
 footer p {
-    margin: 10px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 footer i {
-    padding-right: 20px;
+    padding-right: 1em;
+}
+
+.newsletter {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+
 }
 
 .news {
-    position: relative;
-    top: 20px;
-    height: 39px;
     font-size: 24px;
     font-weight: 700;
-    text-justify: distribute;
     text-transform: uppercase;
-    margin-bottom: 24px;
+    grid-column: 1/3;
+}
+
+.newsletter p {
+    margin: 0;
+    grid-column: 1/3;
+    align-self: start;
+    justify-self: justify;
 }
 
 footer input {
-    margin-left: 10px;
+    align-self: start;
     border: none;
-    padding: 0;
     border-radius: 0.6rem;
-    height: 40px;
-    width: calc(70% - 10px);
+    height: 40%;
+    width: 99%;
+    padding: 0;
 }
 
 footer button.btn {
+    align-self: start;
     border-radius: 0.6rem;
-    height: 40px;
-    width: calc(30% - 10px);
-    border: none;
+    height: 40%;
+    width: 95%;
     padding: 0;
+    border: 0;
 }
 
 span {
     display: inline-block;
-    width: 100%;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
     text-align: center;
+    font-size: 2.5em;
 }
 
 footer button.btn:hover {
@@ -240,11 +277,7 @@ footer button.btn:hover {
     background-color: hsl(207, 100%, 98%);
 }
 
-
-
 footer div i.fab {
-    text-align: center;
-    font-size: 50px;
     margin: 20px 0 0 10px;
 }
 
@@ -252,152 +285,119 @@ footer div i.fab:hover {
     cursor: pointer;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 800px) {
     body {
-        max-width: 375px;
-    }
-
-    .logo {
-        position: relative;
-        scale: 0.6;
-        top: 10px;
-        left: -40px;
-    }
-
-    .btn.getStarted {
-        margin-top: 20px;
-        font-weight: 600;
-        padding: 10px 40px 10px 40px;
-    }
-
-    .btn.tryIt {
-        top: 5px;
-        right: 10px;
-        padding: 5px 20px 5px 20px;
-    }
-
-    section.first {
-        padding-top: 30vw;
-        padding-bottom: 30vw;
-    }
-
-    section.first p {
-        margin: 10px 0;
-        width: auto;
+        max-width: 800px;
     }
 
     section.second {
         grid-template-columns: auto;
-        /* grid-template-rows: auto auto auto; */
     }
 
     .mockups {
         grid-column: auto;
     }
 
-    .mockups img {
-        max-width: 375px;
-    }
-
-
-    div.images>img {
-        width: 375px;
-        height: auto;
-
-    }
-
     section.third,
     section.fourth,
     section.fifth {
         grid-template-columns: auto;
         height: auto;
+        min-height: 80vh;
     }
 
-    section.third,
-    section.fourth,
-    section.fifth {
-        min-height: 90vh;
-    }
 
-    .third>div,
-    .fourth>div,
-    .fifth>div {
-        padding: 15px 0;
+
+    div.images>img {
+        width: 90%;
         height: auto;
-
+        justify-self: center;
     }
 
     .third>div h2,
     .fourth>div h2,
     .fifth>div h2 {
-        margin: auto;
+        text-align: center;
     }
 
     .third>div p,
     .fourth>div p,
     .fifth>div p {
-        margin-left: 10px;
-        margin-right: 10px;
-        text-align: center;
-
-    }
-
-    section.sixth,
-    footer {
-        height: 100vh;
-    }
-
-    section div.images {
-        margin-top: 112px;
-        margin-bottom: 0;
-    }
-
-    section.fifth div.images {
-        margin-top: 103px;
-        margin-bottom: 0;
-    }
-
-    section div {
-        margin-bottom: 51px;
-    }
-
-    section.fifth div {
-        margin-bottom: 101px;
+        text-align: justify;
+        width: 75%;
     }
 
     div.images {
         grid-row: 1 / 2;
+        align-items: end;
     }
 
-    section.third {
-        background-image: url(/images/bg-section-top-mobile-1.svg), url(/images/bg-section-bottom-mobile-1.svg);
+    section.second {
+        background-image: url(/images/bg-section-top-mobile-1.svg)
     }
 
-    section.fifth {
-        background-image: url(/images/bg-section-top-mobile-2.svg), url(/images/bg-section-bottom-mobile-2.svg);
+    section.fourth {
+        padding-top: 10vh;
+        padding-bottom: 20vh;
+        background-image: url(/images/bg-section-top-mobile-2.svg), url(/images/bg-section-bottom-mobile-1.svg);
+    }
+
+    section.sixth {
+        background-image: url(/images/bg-footer-top-mobile.svg), url(/images/bg-section-bottom-mobile-2.svg);
     }
 
     footer {
         grid-template-columns: auto;
-        background-image: url(/images/bg-footer-top-mobile.svg);
+        height: 70vh;
+        align-items: center;
+        justify-items: center;
     }
 
-    footer div {
-        padding: 5px 10px;
+    footer .logo {
+        margin-left: 9vw;
     }
 
-    footer div:last-child {
+    .newsletter {
         grid-row: 1 / 2;
-        margin-top: 52px;
-        height: 50vh;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .newsletter .news {
+        align-self: end;
+    }
+
+    .newsletter button,
+    .newsletter input {
+        grid-column: 1/3;
+    }
+
+    .newsletter button.btn {
+        width: 30vw;
+        max-width: 150px;
+        min-height: 40px;
+        font-size: 1em;
+    }
+
+    .newsletter input {
+        width: 70vw;
+        max-width: 300px;
+        min-height: 40px;
     }
 
     footer div:first-child {
-        height: 60vh;
+        grid-template-rows: 30% auto auto auto auto;
     }
 
     footer div i.fab {
-        font-size: 25px;
-        margin: 0 0 0 10px;
+        font-size: 0.5em;
+    }
+}
+
+@media (max-width: 375px) {
+    body {
+        min-width: 375px;
     }
 }
