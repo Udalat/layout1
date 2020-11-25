@@ -250,6 +250,7 @@ footer input {
     border: none;
     border-radius: 0.6rem;
     height: 40%;
+    min-height: 50px;
     width: 99%;
     padding: 0;
 }
@@ -258,6 +259,7 @@ footer button.btn {
     align-self: start;
     border-radius: 0.6rem;
     height: 40%;
+    min-height: 50px;
     width: 95%;
     padding: 0;
     border: 0;
